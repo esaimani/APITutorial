@@ -1,0 +1,88 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "As a user I want to create new user id",
+        "description": "",
+        "id": "create-new-irctc-user;as-a-user-i-want-to-create-new-user-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12694229819,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Irctc URL should be opened",
+            "match": {
+              "location": "CreateNewRegisterSteps.irctcURLShouldBeOpened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50566,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on Register Link",
+            "match": {
+              "location": "CreateNewRegisterSteps.clickOnRegisterLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12618,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Enter the all mandatory Informations",
+            "match": {
+              "location": "CreateNewRegisterSteps.enterTheAllMandatoryInformations()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12839,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks on Register Button",
+            "match": {
+              "location": "CreateNewRegisterSteps.userClicksOnRegisterButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22401,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Created Successfully message shoud displayed",
+            "match": {
+              "location": "CreateNewRegisterSteps.userCreatedSuccessfullyMessageShoudDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create New IRCTC User",
+    "description": "",
+    "id": "create-new-irctc-user",
+    "keyword": "Feature",
+    "uri": "CreateNewUser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@IRCTC"
+      }
+    ]
+  }
+]

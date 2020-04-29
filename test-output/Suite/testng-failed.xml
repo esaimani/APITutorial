@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="2" name="Test(failed)">
+    <classes>
+      <class name="org.runner.Runnercukes">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="endReport"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="startTest"/>
+          <include name="StartReport"/>
+          <include name="tearDownClass"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- org.runner.Runnercukes -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
