@@ -17,12 +17,15 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.SnippetType;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.CucumberOptions.SnippetType;
 
-@CucumberOptions(features = "src/test/resources/org/features", glue = "org/steps", monochrome = true, dryRun = false, tags = "@IRCTC", snippets = SnippetType.CAMELCASE, plugin = {
-		"pretty", "html:target/Destination", "json:target/Destination/cucumber.json"})
+
+
+@CucumberOptions(features = "src/test/resources/Features", glue = "org/steps", monochrome = true, dryRun = false, tags="@Frame",snippets = SnippetType.CAMELCASE, plugin = {
+		"pretty", "html:target/Destination", "json:target/Destination/cucumber.json"},
+strict = true)
 public class Runnercukes extends AbstractTestNGCucumberTests {
 
 	public static ExtentSparkReporter htmlReporter;

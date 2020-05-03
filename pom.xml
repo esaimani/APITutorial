@@ -81,20 +81,26 @@
 			<version>2.6</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java <dependency> 
+			<groupId>info.cukes</groupId> <artifactId>cucumber-java</artifactId> <version>1.2.5</version> 
+			</dependency> https://mvnrepository.com/artifact/info.cukes/cucumber-testng 
+			<dependency> <groupId>info.cukes</groupId> <artifactId>cucumber-testng</artifactId> 
+			<version>1.2.5</version> </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.5</version>
+			<version>5.7.0</version>
 		</dependency>
 
-
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.5</version>
+			<version>5.7.0</version>
 		</dependency>
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 		<dependency>

@@ -17,7 +17,6 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -244,6 +243,9 @@ public class BaseMethods implements Browser, Element {
 		} catch (NoSuchElementException e) {
 			System.err.println("The Element with locator:" + locatorType + " Not Found with value: " + value);
 			throw new RuntimeException();
+		} catch (StaleElementReferenceException e) {
+			System.err.println("The Element with locator:" + locatorType + " Not Found with value: " + value);
+			throw new RuntimeException();
 		}
 		return null;
 	}
@@ -418,14 +420,14 @@ public class BaseMethods implements Browser, Element {
 	}
 
 	public static String capture() {
-		
+
 		try {
 			File Dest = new File("./target/screenshots/" + System.currentTimeMillis() + ".png");
 			String filepath = Dest.getAbsolutePath();
 			FileUtils.copyFile(driver.getScreenshotAs(OutputType.FILE), Dest);
 			return filepath;
 		} catch (WebDriverException e) {
-			
+
 			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -438,6 +440,31 @@ public class BaseMethods implements Browser, Element {
 	public static MediaEntityModelProvider attachScreenshot() throws IOException {
 
 		return MediaEntityBuilder.createScreenCaptureFromPath(capture()).build();
+
+	}
+
+	public void navigateToBlog(String blockName) {
+
+		try {
+			switch (blockName.toLowerCase()) {
+			case "input":
+				driver.findElementByXPath("//span[text()='Dropdown']").click();
+			case "button":
+				driver.findElementByXPath("//span[text()='Buttons']").click();
+			case "hyperlink":
+				driver.findElementByXPath("//span[text()='Hyper Link']").click();
+			case "dropdown":
+				driver.findElementByXPath("//span[text()='Dropdown']").click();
+			case "frame":
+				driver.findElementByXPath("//span[text()='Frame']").click();
+			}
+		} catch (NoSuchElementException e) {
+			System.err.println(e.getMessage());
+			throw new RuntimeException();
+		} catch (StaleElementReferenceException e) {
+			System.err.println(e.getMessage());
+			throw new RuntimeException();
+		}
 
 	}
 }

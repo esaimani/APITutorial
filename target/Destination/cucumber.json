@@ -1,88 +1,92 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "As a user I want to create new user id",
+        "start_timestamp": "2020-05-03T13:44:08.453Z",
+        "before": [
+          {
+            "result": {
+              "duration": 19287000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.steps.Hooks.launchApp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Validate Frames Concept",
         "description": "",
-        "id": "create-new-irctc-user;as-a-user-i-want-to-create-new-user-id",
+        "id": "test-the-letcode-site-functionality;validate-frames-concept",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.steps.Hooks.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12694229819,
+              "duration": 55000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Irctc URL should be opened",
+            "line": 18,
+            "name": "Launch the \"\u003curl\u003e\" Letcode website",
             "match": {
-              "location": "CreateNewRegisterSteps.irctcURLShouldBeOpened()"
+              "arguments": [
+                {
+                  "val": "\"\u003curl\u003e\"",
+                  "offset": 11
+                }
+              ],
+              "location": "org.steps.Letcode.launchTheLetcodeWebsite(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 50566,
+              "duration": 533000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "Click on Register Link",
+            "line": 19,
+            "name": "Navigate to workspace",
             "match": {
-              "location": "CreateNewRegisterSteps.clickOnRegisterLink()"
+              "location": "org.steps.Letcode.navigateToWorkspace()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12618,
+              "duration": 363000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "Enter the all mandatory Informations",
+            "line": 20,
+            "name": "Navigate to Frame Blog",
             "match": {
-              "location": "CreateNewRegisterSteps.enterTheAllMandatoryInformations()"
+              "location": "org.steps.Letcode.navigateToFrameBlog()"
             },
             "keyword": "And "
-          },
+          }
+        ],
+        "tags": [
           {
-            "result": {
-              "duration": 12839,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User clicks on Register Button",
-            "match": {
-              "location": "CreateNewRegisterSteps.userClicksOnRegisterButton()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 22401,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User Created Successfully message shoud displayed",
-            "match": {
-              "location": "CreateNewRegisterSteps.userCreatedSuccessfullyMessageShoudDisplayed()"
-            },
-            "keyword": "Then "
+            "name": "@Frame"
           }
         ]
       }
     ],
-    "name": "Create New IRCTC User",
+    "name": "Test the Letcode Site Functionality",
     "description": "",
-    "id": "create-new-irctc-user",
+    "id": "test-the-letcode-site-functionality",
     "keyword": "Feature",
-    "uri": "CreateNewUser.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@IRCTC"
-      }
-    ]
+    "uri": "file:src/test/resources/Features/Letcode.feature",
+    "tags": []
   }
 ]

@@ -3,11 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.api.programs.GetBodyFromJsonFile">
+      <class name="org.runner.Runnercukes">
         <methods>
-          <include name="addBook"/>
+          <include name="endReport"/>
+          <include name="startTest"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="StartReport"/>
+          <include name="tearDownClass"/>
+          <include name="getResult"/>
+          <include name="setUpClass"/>
         </methods>
-      </class> <!-- com.api.programs.GetBodyFromJsonFile -->
+      </class> <!-- org.runner.Runnercukes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

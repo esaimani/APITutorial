@@ -1,83 +1,53 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("CreateNewUser.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/Letcode.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Create New IRCTC User",
+  "name": "Test the Letcode Site Functionality",
   "description": "",
-  "id": "create-new-irctc-user",
-  "keyword": "Feature",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Validate Frames Concept",
+  "description": "",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 1,
-      "name": "@IRCTC"
+      "name": "@Frame"
     }
   ]
 });
-formatter.scenario({
-  "line": 4,
-  "name": "As a user I want to create new user id",
-  "description": "",
-  "id": "create-new-irctc-user;as-a-user-i-want-to-create-new-user-id",
-  "type": "scenario",
-  "keyword": "Scenario"
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
-  "line": 5,
-  "name": "Irctc URL should be opened",
+  "name": "Launch the \"\u003curl\u003e\" Letcode website",
   "keyword": "Given "
 });
+formatter.match({
+  "location": "org.steps.Letcode.launchTheLetcodeWebsite(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.step({
-  "line": 6,
-  "name": "Click on Register Link",
+  "name": "Navigate to workspace",
   "keyword": "And "
 });
+formatter.match({
+  "location": "org.steps.Letcode.navigateToWorkspace()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.step({
-  "line": 7,
-  "name": "Enter the all mandatory Informations",
+  "name": "Navigate to Frame Blog",
   "keyword": "And "
 });
-formatter.step({
-  "line": 8,
-  "name": "User clicks on Register Button",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 9,
-  "name": "User Created Successfully message shoud displayed",
-  "keyword": "Then "
-});
 formatter.match({
-  "location": "CreateNewRegisterSteps.irctcURLShouldBeOpened()"
+  "location": "org.steps.Letcode.navigateToFrameBlog()"
 });
 formatter.result({
-  "duration": 12694229819,
   "status": "passed"
 });
-formatter.match({
-  "location": "CreateNewRegisterSteps.clickOnRegisterLink()"
-});
-formatter.result({
-  "duration": 50566,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CreateNewRegisterSteps.enterTheAllMandatoryInformations()"
-});
-formatter.result({
-  "duration": 12618,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CreateNewRegisterSteps.userClicksOnRegisterButton()"
-});
-formatter.result({
-  "duration": 12839,
-  "status": "passed"
-});
-formatter.match({
-  "location": "CreateNewRegisterSteps.userCreatedSuccessfullyMessageShoudDisplayed()"
-});
-formatter.result({
-  "duration": 22401,
+formatter.after({
   "status": "passed"
 });
 });

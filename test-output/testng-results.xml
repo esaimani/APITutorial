@@ -2,16 +2,62 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3013" started-at="2020-04-21T16:36:22 IST" finished-at="2020-04-21T16:36:25 IST">
+  <suite name="Default suite" duration-ms="22706" started-at="2020-05-03T19:14:06 IST" finished-at="2020-05-03T19:14:29 IST">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.runner.Runnercukes@670b40af]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="3013" started-at="2020-04-21T16:36:22 IST" finished-at="2020-04-21T16:36:25 IST">
-      <class name="com.api.programs.GetBodyFromJsonFile">
-        <test-method status="PASS" signature="addBook()[pri:0, instance:com.api.programs.GetBodyFromJsonFile@3dfc5fb8]" name="addBook" duration-ms="2968" started-at="2020-04-21T16:36:22 IST" finished-at="2020-04-21T16:36:25 IST">
+    <test name="Default test" duration-ms="22706" started-at="2020-05-03T19:14:06 IST" finished-at="2020-05-03T19:14:29 IST">
+      <class name="org.runner.Runnercukes">
+        <test-method status="PASS" signature="StartReport()[pri:0, instance:org.runner.Runnercukes@670b40af]" name="StartReport" is-config="true" duration-ms="551" started-at="2020-05-03T19:14:06 IST" finished-at="2020-05-03T19:14:06 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addBook -->
-      </class> <!-- com.api.programs.GetBodyFromJsonFile -->
+        </test-method> <!-- StartReport -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:org.runner.Runnercukes@670b40af]" name="setUpClass" is-config="true" duration-ms="1030" started-at="2020-05-03T19:14:06 IST" finished-at="2020-05-03T19:14:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="startTest()[pri:0, instance:org.runner.Runnercukes@670b40af]" name="startTest" is-config="true" duration-ms="9" started-at="2020-05-03T19:14:07 IST" finished-at="2020-05-03T19:14:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.runner.Runnercukes@670b40af]" name="runScenario" duration-ms="20811" started-at="2020-05-03T19:14:07 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-05-03T19:14:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate Frames Concept"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Letcode Site Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:org.runner.Runnercukes@670b40af]" name="getResult" is-config="true" duration-ms="23" started-at="2020-05-03T19:14:28 IST" finished-at="2020-05-03T19:14:28 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=runScenario status=SUCCESS method=AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:org.runner.Runnercukes@670b40af] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:org.runner.Runnercukes@670b40af]" name="tearDownClass" is-config="true" duration-ms="714" started-at="2020-05-03T19:14:28 IST" finished-at="2020-05-03T19:14:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:org.runner.Runnercukes@670b40af]" name="endReport" is-config="true" duration-ms="2204" started-at="2020-05-03T19:14:29 IST" finished-at="2020-05-03T19:14:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- org.runner.Runnercukes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
